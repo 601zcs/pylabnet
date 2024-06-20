@@ -234,6 +234,7 @@ class LogClient:
             #     client_data['lab_name'] = 'NO LAB'
 
             client_data_pickle = pickle.dumps(client_data)
+            # self._service.add_client_data(self._module_tag, client_data_pickle)
             self._service.add_client_data(self._module_tag, client_data_pickle)
             return 0
 

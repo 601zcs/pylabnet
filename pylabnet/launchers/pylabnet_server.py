@@ -30,6 +30,7 @@ def main():
 
     # parse command line arguments
     args = parse_args()
+    print(args)
     try:
         log_port = int(args['logport'])
     except IndexError:
